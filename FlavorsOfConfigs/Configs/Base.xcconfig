@@ -1,3 +1,9 @@
 //
 //  Base.xcconfig
 //
+
+APP_NAME = FlavorsOfConfigs
+
+BASE_BUNDLE_IDENTIFIER = com.TheAlienMann.FlavorsOfConfigs
+
+PRODUCT_BUNDLE_IDENTIFIER = $(BASE_BUNDLE_IDENTIFIER)
