@@ -1,0 +1,12 @@
+//
+//  Debug.xcconfig
+//
+#include "Base.xcconfig"
+
+APP_NAME = $(inherited)-Debug
+
+BASE_BUNDLE_IDENTIFIER = com.TheAlienMann.FlavorsOfConfigs.Debug
+
+PRODUCT_BUNDLE_IDENTIFIER = $(BASE_BUNDLE_IDENTIFIER).debug
+
+ASSETCATALOG_COMPILER_APPICON_NAME = $(inherited)-Debug
