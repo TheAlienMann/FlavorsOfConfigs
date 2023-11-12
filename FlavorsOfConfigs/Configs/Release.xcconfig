@@ -1,0 +1,12 @@
+//
+//  Release.xcconfig
+//
+#include "Base.xcconfig"
+
+APP_NAME = $(inherited)
+
+BASE_BUNDLE_IDENTIFIER = com.TheAlienMann.FlavorsOfConfigs
+
+PRODUCT_BUNDLE_IDENTIFIER = $(BASE_BUNDLE_IDENTIFIER)
+
+ASSETCATALOG_COMPILER_APPICON_NAME = $(inherited)

@@ -54,6 +54,7 @@
 		49DB5F792B00E5E9006FD43E /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		49DB5F7E2B01420C006FD43E /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		49DB5F7F2B01442D006FD43E /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		49DB5F802B0144E2006FD43E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +142,7 @@
 				49DB5F792B00E5E9006FD43E /* Base.xcconfig */,
 				49DB5F7E2B01420C006FD43E /* Debug.xcconfig */,
 				49DB5F7F2B01442D006FD43E /* Staging.xcconfig */,
+				49DB5F802B0144E2006FD43E /* Release.xcconfig */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -397,6 +399,7 @@
 		};
 		49DB5F6C2B00E163006FD43E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DB5F792B00E5E9006FD43E /* Base.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -481,6 +484,7 @@
 		};
 		49DB5F6F2B00E163006FD43E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DB5F802B0144E2006FD43E /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -531,6 +535,7 @@
 		};
 		49DB5F722B00E163006FD43E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DB5F802B0144E2006FD43E /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -570,6 +575,7 @@
 		};
 		49DB5F752B00E163006FD43E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49DB5F802B0144E2006FD43E /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
