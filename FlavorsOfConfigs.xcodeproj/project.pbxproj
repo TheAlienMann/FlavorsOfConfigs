@@ -51,6 +51,7 @@
 		49DB5F692B00E163006FD43E /* FlavorsOfConfigsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlavorsOfConfigsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		49DB5F762B00E28F006FD43E /* FlavorsOfConfigsTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FlavorsOfConfigsTests.xctestplan; sourceTree = "<group>"; };
 		49DB5F772B00E2C8006FD43E /* FlavorsOfConfigsUITests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = FlavorsOfConfigsUITests.xctestplan; sourceTree = "<group>"; };
+		49DB5F792B00E5E9006FD43E /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 		49DB5F452B00E15D006FD43E /* FlavorsOfConfigs */ = {
 			isa = PBXGroup;
 			children = (
+				49DB5F782B00E5CF006FD43E /* Configs */,
 				49DB5F462B00E15D006FD43E /* AppDelegate.swift */,
 				49DB5F482B00E15D006FD43E /* SceneDelegate.swift */,
 				49DB5F4A2B00E15D006FD43E /* ViewController.swift */,
@@ -129,6 +131,14 @@
 				49DB5F692B00E163006FD43E /* FlavorsOfConfigsUITestsLaunchTests.swift */,
 			);
 			path = FlavorsOfConfigsUITests;
+			sourceTree = "<group>";
+		};
+		49DB5F782B00E5CF006FD43E /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				49DB5F792B00E5E9006FD43E /* Base.xcconfig */,
+			);
+			path = Configs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
