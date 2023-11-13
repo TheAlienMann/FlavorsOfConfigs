@@ -1,6 +1,3 @@
-//
-//  Debug.xcconfig
-//
 #include "Base.xcconfig"
 
 APP_NAME = $(inherited)-Debug

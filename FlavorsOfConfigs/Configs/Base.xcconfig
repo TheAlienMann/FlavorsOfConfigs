@@ -1,8 +1,4 @@
-//
-//  Base.xcconfig
-//
-
-APP_NAME = FlavorsOfConfigs
+APP_NAME = FOC
 
 BASE_BUNDLE_IDENTIFIER = com.TheAlienMann.FlavorsOfConfigs
 
