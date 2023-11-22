@@ -28,3 +28,24 @@ the `$(inherited)` fetches the value of `APP_NAME` from the Base config.
 
 To have your app showing the desired name (aka display name), you need to add a setting in the `info` plist file of your project.
 `Bundle display name` and set its value to `$(APP_NAME)`.<br/> Now you need to change the Build Configuration in the scheme editor to your configuration, let's say QA.<br/> after doing so, build and run, you should see that the name of your app following what you set in the xcconfig file. 
+
+
+But... nothing happened,  right? You don't see what you expected, not cool, I know.<br/> The reason is, you need to set up a different Bundle Identifier for your configuration, in order to be able to run all the Build Configurations separately and be able to distinguish them from one another.<br/>
+For that, do the following in the Base xcconfig file:
+
+```
+BASE_BUNDLE_IDENTIFIER = TheBundleIdentifierOfYourApp OR xyz.domain.yourProjectName
+
+PRODUCT_BUNDLE_IDENTIFIER = $(BASE_BUNDLE_IDENTIFIER)
+```
+
+The first line is declaring a variable to hold the bundle id of your app. The second line which is just a setting in your app's target, build setting, in the packaging section, is what that makes idea of having multiple flavors of your app at once available.<br/> Next you need to override the `PRODUCT_BUNDLE_IDENTIFIER` in your QA xcconfig to:
+
+```
+BASE_BUNDLE_IDENTIFIER = com.TheAlienMann.Stranger
+
+PRODUCT_BUNDLE_IDENTIFIER = $(BASE_BUNDLE_IDENTIFIER).qa
+```
+
+Next, in the Targets, find your app, select the `Build Settings` tab, find `Packaging` section, here you need to find `Product Bundle Identifier` and change its value to:
+`$(inherited)`. Change the build configuration to QA in the scheme editor (or just hit cmd + option + R), and run the app, you'll see that the app name has changed with a "QA" appeneded to it!
