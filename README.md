@@ -56,3 +56,8 @@ Next, It would be nice if you could set a different icon for each of the build c
 <p float="center">
 <img src="./Images/2.png" width=300>
 </p>
+
+You probably ask what else can I do with xcconfigs. Well, there's so much you can do.<br/> For instance, when you're hitting an API endpoint, you'd like to hit a different endpoint for testing purposes or for the QA. Yes, you can set up your API endpoints in the xcconfig, a different route for each build configuration, and call the related one while running a specific build configuration.
+
+I will demonstrate this with a literal string and print it in the console which can help to get the gist of the URLSession request call with a URL.
+
