@@ -7,3 +7,5 @@ BASE_BUNDLE_IDENTIFIER = com.TheAlienMann.FlavorsOfConfigs.Debug
 PRODUCT_BUNDLE_IDENTIFIER = $(BASE_BUNDLE_IDENTIFIER).debug
 
 ASSETCATALOG_COMPILER_APPICON_NAME = $(inherited)-Debug
+
+SAMPLE_STRING = $(inherited) Debug.

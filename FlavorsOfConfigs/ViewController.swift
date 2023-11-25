@@ -10,5 +10,9 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     
     view.backgroundColor = .systemRed
+    
+    guard let infoDictionary = Bundle.main.infoDictionary else { return }
+    guard let sampleString = infoDictionary["SAMPLE_STRING"] as? String else { return }
+    print(#line, #file.components(separatedBy: "/").last!, sampleString)
   }
 }

@@ -23,5 +23,7 @@
 	</dict>
 	<key>CFBundleDisplayName</key>
 	<string>$(APP_NAME)</string>
+	<key>SAMPLE_STRING</key>
+	<string>$(SAMPLE_STRING)</string>
 </dict>
 </plist>

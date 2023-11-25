@@ -7,3 +7,5 @@ BASE_BUNDLE_IDENTIFIER = com.TheAlienMann.FlavorsOfConfigs.Staging
 PRODUCT_BUNDLE_IDENTIFIER = $(BASE_BUNDLE_IDENTIFIER).staging
 
 ASSETCATALOG_COMPILER_APPICON_NAME = $(inherited)-Staging
+
+SAMPLE_STRING = $(inherited) Staging.
