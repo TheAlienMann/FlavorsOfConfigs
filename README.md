@@ -69,6 +69,8 @@ I am going to declare a variblae in the Base xcconfig as `SAMPLE_STRING` assign 
     print(#line, #file.components(separatedBy: "/").last!, sampleString)
 ```
 
+For this to work, the sample code above, you need to add a key-value pair to the `info.plist`, as `SAMPLE_STRING` for key, and `$(SAMPLE_STRING)` for the value which will be fetched from the related xcconfig files.
+
 Change the build configuration in the scheme editor (CMD + Option + R) to any of the the configutations, and build and run. You will see the related message is being printed in the console, like the following:
 
 <p float="center">
