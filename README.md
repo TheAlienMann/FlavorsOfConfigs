@@ -61,3 +61,18 @@ You probably ask what else can I do with xcconfigs. Well, there's so much you ca
 
 I will demonstrate this with a literal string and print it in the console which can help to get the gist of the URLSession request call with a URL.
 
+I am going to declare a variblae in the Base xcconfig as `SAMPLE_STRING` assign the value `Hello from ` to it. Then I'll call the same variable in other configs, for instance Debug, and i will assign `$(inheited) Debug.` to it for the Debug configutation. You will do the same for other configutations.<br/> Next, in the viewController's viewDidLoad, you will do the following:
+
+```
+    guard let infoDictionary = Bundle.main.infoDictionary else { return }
+    guard let sampleString = infoDictionary["SAMPLE_STRING"] as? String else { return }
+    print(#line, #file.components(separatedBy: "/").last!, sampleString)
+```
+
+Change the build configuration in the scheme editor (CMD + Option + R) to any of the the configutations, and build and run. You will see the related message is being printed in the console, like the following:
+
+<p float="center">
+<img src="./Images/3.png">
+<img src="./Images/4.png">
+<img src="./Images/5.png">
+<p/>
